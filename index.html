@@ -1,71 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <title>Ray | Indie iOS Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f7f7f7;
-      color: #222;
-      margin: 0;
-      padding: 40px 20px;
-    }
-    .container {
-      max-width: 640px;
-      margin: 0 auto;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
-    p {
-      line-height: 1.6;
-      margin-bottom: 24px;
-    }
-    .app {
-      background: #fff;
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 16px;
-    }
-    .app a {
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: 600;
-    }
-    .kofi {
-      text-align: center;
-      margin-top: 32px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ray | iOS Developer Portfolio</title>
+  <meta name="description"
+    content="iOS Developer Ray's portfolio featuring Plump, Low Light Video Enhancer, VidPair, and more.">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Ray</h1>
-    <p>Indie iOS Developer. I make simple and calm apps.</p>
 
-    <div class="app">
-      <a href="#">Plump</a><br>
-      A calm digital toy for relaxation.
+  <header class="fade-in">
+    <div class="container">
+      <h1 class="text-gradient">Ray</h1>
+      <p class="text-muted">Indie iOS Developer / Creator</p>
     </div>
+  </header>
 
-    <div class="app">
-      <a href="#">VidPair</a><br>
-      Compare two videos side by side.
-    </div>
+  <main>
+    <section class="hero fade-in">
+      <div class="container">
+        <h2>モノづくりで、日常に彩りを。</h2>
+        <p class="text-muted">シンプルで洗練された、使い心地の良いiOSアプリを開発しています。</p>
+      </div>
+    </section>
 
-    <div class="app">
-      <a href="#">Low Light Video Enhancer</a><br>
-      Brighten dark videos on device.
-    </div>
+    <section id="projects" class="fade-in" style="animation-delay: 0.2s;">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="project-grid">
+          <!-- Plump -->
+          <a href="projects/plump.html" class="project-card">
+            <span class="badge">Relaxation</span>
+            <h3>Plump</h3>
+            <p>タップするたびに広がる、心地よい質感と音。デジタルに触れる楽しさを再定義するリラクゼーションアプリ。</p>
+          </a>
 
-    <div class="kofi">
-      <a href="https://ko-fi.com/yourname" target="_blank">
-        ☕ Support me on Ko-fi
-      </a>
+          <!-- Low Light Video Enhancer -->
+          <a href="projects/low-light-video-enhancer.html" class="project-card">
+            <span class="badge">Utility</span>
+            <h3>Low Light Video Enhancer</h3>
+            <p>暗い場所で撮った動画を、AIの力で明るく鮮やかに。オンデバイス処理でプライバシーを守りながら補正します。</p>
+          </a>
+
+          <!-- VidPair -->
+          <a href="projects/vidpair.html" class="project-card">
+            <span class="badge">Video Tool</span>
+            <h3>VidPair</h3>
+            <p>2つの動画を並べて比較。ダンスのフォームチェックや、ビフォーアフターの確認に最適なビデオツール。</p>
+          </a>
+
+          <!-- みんなの投票 -->
+          <a href="projects/minna-no-tohyo.html" class="project-card">
+            <span class="badge">Social</span>
+            <h3>みんなの投票</h3>
+            <p>シンプルに、みんなの意見を。直感的な操作で簡単にアンケートが作成・集計できる投票アプリ。</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Ray. All rights reserved.</p>
+      <div style="margin-top: 1rem;">
+        <a href="https://github.com/Yukks-tkg" target="_blank" class="text-muted" style="margin: 0 10px;">GitHub</a>
+        <a href="https://x.com/itsrayyuki" target="_blank" class="text-muted" style="margin: 0 10px;">X (Twitter)</a>
+      </div>
     </div>
-  </div>
+  </footer>
+
 </body>
+
 </html>
